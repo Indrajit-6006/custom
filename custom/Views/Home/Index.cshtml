@@ -1,0 +1,44 @@
+﻿@model custom.Models.CustLogInfo
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <br />
+    <form style="width:800px">
+
+
+        @Html.LabelFor(m => m.LogId, new { @class = "col-md-2 control-label" })
+
+        @Html.TextBoxFor(m => m.LogId, new { @class = "col-md-2 control-label" })
+
+        <br />
+        <br />
+
+        @Html.LabelFor(m => m.CustEmail, new { @class = "col-md-2 control-label" })
+
+        @Html.TextBoxFor(m => m.CustEmail, new { @class = "col-md-2 control-label" })
+        <br />
+        <br />
+        @Html.LabelFor(m => m.CustName, new { @class = "col-md-2 control-label" })
+
+        @Html.TextBoxFor(m => m.CustName, new { @class = "col-md-2 control-label" })
+        <br />
+        <br />
+        @Html.LabelFor(m => m.LogStatus, new { @class = "col-md-2 control-label" })
+
+        @Html.TextBoxFor(m => m.LogStatus, new { @class = "col-md-2 control-label" })
+        <br />
+        <br />
+        @Html.LabelFor(m => m.Description, new { @class = "col-md-2 control-label" })
+
+        @Html.TextBoxFor(m => m.Description, new { @class = "col-md-2 control-label" })
+        <br />
+        <br />
+        <input type="submit" class="btn btn-success" value="Save" onclick="alert('Complaint Saved Successfully !')" />
+        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+        <input type="reset" class="btn btn-info" value="Reset" />
+
+
+    </form>
+</div>
